@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swarm Cursors</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Swarm Cursors</h1>
+    <p class="subtitle">Control your cursor swarm</p>
+
+    <div class="control">
+      <label for="enabled">Enable Swarm</label>
+      <input type="checkbox" id="enabled">
+    </div>
+
+    <div class="control">
+      <label for="cursorCount">Number of cursors</label>
+      <span id="countValue">8</span>
+    </div>
+    <input type="range" id="cursorCount" min="1" max="30" value="8">
+
+    <div class="control">
+      <label for="cursorColor">Cursor color</label>
+      <input type="color" id="cursorColor" value="#7c3aed">
+    </div>
+
+    <div class="control">
+      <label for="cursorSize">Cursor size</label>
+      <span id="sizeValue">18</span>
+    </div>
+    <input type="range" id="cursorSize" min="6" max="40" value="18">
+
+    <button id="resetButton">Reset Settings</button>
+    <p id="status" role="status">Ready</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
